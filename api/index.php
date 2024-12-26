@@ -19,7 +19,7 @@ IT技术群:200702731   YB:Feng
 error_reporting(0);
 header('Content-type:text/json;charset=utf8');
 define('WHO1', 'cache/'); //缓存保存的文件夹 如果不缓存请无视
-define('WHO2', 'epg/'); //自定义二级目录文件夹
+define('WHO2', 'api/'); //自定义二级目录文件夹
 $web_time = microtime(true);
 $webApi =  domain();
 $Vtche = $_GET['cache'];
@@ -28,7 +28,7 @@ if ($GX == '666666') {
     $urlxml = [//不要太贪心，否则卡死
         // 'http://epg.pw/xmltv/epg_HK.xml.gz', //香港
         // 'http://epg.pw/xmltv/epg_TW.xml.gz', //台湾
-        'https://ghproxy.liuzhicong.com/https://raw.githubusercontent.com/Meroser/EPG-test/main/tvxml-test.xml.gz', //（今天）全部节目 压缩包文件
+        'https://gitee.com/taksssss/tv/raw/main/epg/erw.xml.gz', //（今天）全部节目 压缩包文件
         //'https://gitee.com/Black_crow/xmlgz/raw/master/cc.xml.gz',
         //'http://epg.51zmt.top:8000/difang.xml.gz',
         // 地区查看：https://epg.pw/xmltv.html?lang=zh-hant
