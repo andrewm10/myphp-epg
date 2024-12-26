@@ -19,7 +19,7 @@ IT技术群:200702731   YB:Feng
 error_reporting(0);
 header('Content-type:text/json;charset=utf8');
 define('WHO1', 'cache/'); //缓存保存的文件夹 如果不缓存请无视
-define('WHO2', 'api/'); //自定义二级目录文件夹
+define('WHO2', '/'); //自定义二级目录文件夹
 $web_time = microtime(true);
 $webApi =  domain();
 $Vtche = $_GET['cache'];
